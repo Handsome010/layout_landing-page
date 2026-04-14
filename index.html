@@ -7,7 +7,7 @@
   <head>
     <link
       rel="icon"
-      href="src/images/smartphone.png"
+      href="src/images/Logo.svg"
     />
     <meta charset="UTF-8" />
     <meta
@@ -70,7 +70,7 @@
             </a>
             <div class="top-bar__icons">
               <a
-                href="#"
+                href="tel:+12345555555"
                 class="icon icon--call"
               ></a>
               <a
@@ -92,7 +92,7 @@
     <!-- #endregion -->
     <!-- #region aside -->
     <aside
-      class="menu page__menu"
+      class="menu page__menu menu__top"
       id="menu"
     >
       <div class="container">
@@ -116,7 +116,7 @@
           <ul class="nav__list">
             <li class="nav__item">
               <a
-                href="#"
+                href="#products"
                 class="nav__link"
               >
                 Products
@@ -217,7 +217,12 @@
           <!-- #endregion -->
           <!-- #region categories -->
           <section class="categories">
-            <h2 class="section-title">Browse Nothing products by category</h2>
+            <h2
+              class="section-title"
+              id="products"
+            >
+              Browse Nothing products by category
+            </h2>
             <div class="categories__wrapper">
               <article class="category">
                 <div class="category__photos">
@@ -286,7 +291,7 @@
                     class="category__link category__link--square"
                   >
                     <img
-                      src="./src/images/Charger.png   "
+                      src="./src/images/charger.png"
                       alt="Accessories"
                       class="category__photo"
                     />
@@ -345,7 +350,7 @@
           <section class="contacts">
             <h2 class="section-title">Contact us</h2>
             <div class="contacts__content">
-              <div class="contacts__fields">
+              <form onsubmit="this.reset(); return false;" class="contacts__fields">
                 <input
                   placeholder="Name"
                   type="text"
@@ -353,30 +358,33 @@
                 />
                 <input
                   placeholder="Email"
-                  type="text"
+                  type="email"
                   class="input-general contacts__input"
                 />
                 <textarea
-                  placeholder = "Message"
+                  placeholder="Message"
                   name="message"
                   class="input-general contacts__textarea"
                 ></textarea>
                 <button
-                  type="button"
+                  type="submit"
                   class="button-general contacts__button"
                 >
                   Send
                 </button>
-              </div>
+              </form>
               <div class="contacts__information">
                 <p class="contacts__label">Phone</p>
                 <p class="contacts__value">+1 234 5555-55-55</p>
                 <p class="contacts__label">Email</p>
                 <p class="contacts__value">hello@nothing.com</p>
                 <p class="contacts__label">Address</p>
-                <p class="contacts__value">
+                <a
+                  href="https://maps.app.goo.gl/Eqko7zicBB7hJG4u6"
+                  target="_blank"
+                  class="contacts__value location-link">
                   400 first ave. suite 700 Minneapolis, MN 55401
-                </p>
+                </a>
               </div>
             </div>
           </section>

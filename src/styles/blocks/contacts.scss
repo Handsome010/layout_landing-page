@@ -39,4 +39,18 @@
   &__label {
     color: vars.$contact-information-color;
   }
+
+  &__value {
+    transition: color vars.$transition-duration;
+
+    &:hover {
+      color: #cfd518;
+    }
+  }
+}
+
+.location-link{
+  text-decoration: none;
+  color: vars.$main-color;
+
 }
