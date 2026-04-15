@@ -42,16 +42,12 @@
 
   &__value {
     transition: color vars.$transition-duration;
+    text-decoration: none;
+    color: vars.$main-color;
 
     &:hover {
       cursor: pointer;
       color: #cfd518;
     }
   }
-}
-
-.location-link{
-  text-decoration: none;
-  color: vars.$main-color;
-
 }
