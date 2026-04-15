@@ -4,6 +4,7 @@
   &:has(.page__menu:target) {
     overflow: hidden; /* not to scroll the page */
   }
+  
   font-family: 'Space Mono', monospace;
   font-size: 16px;
   line-height: 140%;
