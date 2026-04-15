@@ -8,12 +8,13 @@
   font-weight: 700;
   margin: 0;
 
-  @include mix.hover(transform, scale(1.04));
 
   &__photo {
     width: 100%;
     align-self: center;
     margin: 0 0 24px;
+    
+    @include mix.hover(transform, scale(1.04));
   }
 
   &__middle-title {
