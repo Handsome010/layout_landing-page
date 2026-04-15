@@ -44,6 +44,7 @@
     transition: color vars.$transition-duration;
 
     &:hover {
+      cursor: pointer;
       color: #cfd518;
     }
   }

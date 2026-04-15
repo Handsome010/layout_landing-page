@@ -28,6 +28,7 @@
       color:vars.$main-color;
     }
     &:hover{
+      cursor: pointer;
       &::before{
         display: inline;
       }
@@ -38,6 +39,7 @@
     background-image: url(../images/Icon-Burger-menu.svg);
 
     &:hover {
+      cursor: pointer;
       background-image: url(../images/Icon-Burger-menu-hover.svg);
     }
   }

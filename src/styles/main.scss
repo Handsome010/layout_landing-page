@@ -35,7 +35,7 @@
   @include mix.on-tablet {
     height: 400px;
   }
-  
+
   @include mix.on-desktop {
     height: 460px;
   }
@@ -51,6 +51,7 @@
   border: 1px solid vars.$interactive-bg;
   text-indent: 16px;
   &:hover {
+    cursor: pointer;
     color: vars.$main-color;
     box-sizing: border-box;
     border: 1px solid vars.$interactive-border-color;
@@ -71,6 +72,7 @@
   font-size: 16px;
   transition: all vars.$transition-duration;
   &:hover {
+    cursor: pointer;
     background-color: vars.$interactive-bg;
     border: 2px solid vars.$button-border-color;
     color: vars.$main-color;
